@@ -1,0 +1,17 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-movie",
+      "description": "Cinematic cinema background with popcorn and film reels",
+      "imageUrl": "https://picsum.photos/seed/movie1/1920/1080",
+      "imageHint": "cinema movie"
+    },
+    {
+      "id": "poster-fallback",
+      "description": "Abstract movie poster silhouette",
+      "imageUrl": "https://picsum.photos/seed/poster/600/900",
+      "imageHint": "movie poster"
+    }
+  ]
+}

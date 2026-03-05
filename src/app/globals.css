@@ -1,0 +1,50 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 8%; /* #141414 */
+    --foreground: 0 0% 88%; /* #E0E0E0 */
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 357 92% 47%; /* #E50914 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 357 92% 47%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 357 92% 47%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(229, 9, 20, 0.05) 0%, transparent 50%),
+      linear-gradient(to bottom, #141414 0%, #0a0a0a 100%);
+    background-attachment: fixed;
+  }
+}
+
+.glass-morphism {
+  @apply bg-card/60 backdrop-blur-md border border-white/10;
+}
+
+.netflix-gradient {
+  background: linear-gradient(to top, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 0) 100%);
+}
